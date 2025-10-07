@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    /* fallback universal */
+    min-height: 100svh;
+    /* Safari/iOS: viewport “pequena” estável */
+    min-height: 100dvh;
+    /* modernos: viewport dinâmica (ajusta com barra) */
+    overflow-x: hidden;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr 2.5fr 1fr / auto;
+    background-color: #F5D04E;
+    font-family: "Figtree", sans-serif;
+    line-height: 1.5;
+}
+
+div.container{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 3px black;
+    width: 80%;
+    max-width: 340px;
+    grid-row: 2;
+    padding: 15px;
+}
+
+div .foto-principal{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.learning{
+    background-color: #F5D04E;
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 1.4em;
+}
+
+p, h1, aside{
+    padding-top: 16px;
+}
+
+p{
+    font-size: 14px;
+}
+
+.paragrafo4{
+    color: hsl(0, 0%, 42%);
+}
+
+aside{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13.5px;
+}
+
+.foto-perfil{
+    width: 8%;
+    border-radius: 50%;
+}
+
+.attribution{
+    grid-row: 3;
+    padding-top: 10px;
+}
