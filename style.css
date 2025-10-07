@@ -15,6 +15,9 @@ html, body{
     /* modernos: viewport dinâmica (ajusta com barra) */
     overflow-x: hidden;
     width: 100%;
+}
+
+body{
     display: grid;
     grid-template: 1fr 2.5fr 1fr / auto;
     background-color: #F5D04E;
@@ -82,4 +85,15 @@ aside{
 .attribution{
     grid-row: 3;
     padding-top: 10px;
+}
+
+@media (min-width: 640px) {    /* A partir de ~tablets */
+  div.container {
+    padding: 20px;             /* Um pouco mais de respiro */
+    max-width: 365px;          /* Pode crescer um pouco mais */
+  }
+
+  .foto-perfil{
+    width: 10%;
+  }
 }
